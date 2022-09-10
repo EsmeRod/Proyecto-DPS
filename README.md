@@ -5,6 +5,9 @@ Trello: https://trello.com/invite/b/g5XFELkY/bdb408a5cd9d8e30508282b1c23a4615/ap
 
 # Autores
 Esteban Alexander Gamez Perez
+
 Samuel Alejandro Granados González
+
 José Ismael Marín azucar
+
 Rocío Esmeralda Rodríguez Salazar

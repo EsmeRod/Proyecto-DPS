@@ -8,10 +8,10 @@ MockUps: https://app.moqups.com/Nq2ii5pHRQ31T8XGqFbKSVwCcxtHoX4C/view/page/ae8fe
 Licencia Creative Commons implementada: [Atribución-NoComercial-CompartirIgual 4.0 Internacional (CC BY-NC-SA 4.0) ](http://creativecommons.org/licenses/by-nc/4.0/deed.es "Atribución-NoComercial-CompartirIgual 4.0 Internacional (CC BY-NC-SA 4.0) ")
 
 # Autores
-Esteban Alexander Gamez Perez - Programacion BackEnd
+Esteban Alexander Gamez Perez GP080240 - Programacion BackEnd
 
-Samuel Alejandro Granados González - Programacion BackEnd
+Samuel Alejandro Granados González GG150384 - Programacion BackEnd
 
-José Ismael Marín azucar - Programacion FrontEnd
+José Ismael Marín azucar MA162235 - Programacion FrontEnd
 
-Rocío Esmeralda Rodríguez Salazar - Programacion FrontEnd
+Rocío Esmeralda Rodríguez Salazar RS200052 - Programacion FrontEnd

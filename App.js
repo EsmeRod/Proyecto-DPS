@@ -6,6 +6,8 @@ import MenuPrincipal from './Components/MenuPrincipal'
 import Navigation from './Navigation';
 import Citas from './Components/Citas';
 import Subcita from './Components/Subcita'
+import Mascota from './Components/Mascota';
+import Producto from './Components/Producto';
 
 // You can import from local files
 
@@ -15,6 +17,10 @@ export default function App() {
  
     <Navigation />
     //<Subcita />
+
+    //<Mascota />
+
+    //<Producto />
    
    
     

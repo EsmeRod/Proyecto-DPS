@@ -1,11 +1,10 @@
 {
   "expo": {
     "name": "clinicaveterinaria",
-    "slug": "snack-757dd79a-5950-4694-b3e8-20b3caf7bdb3",
+    "slug": "snack-34440885-864e-4f59-b195-18f8c6f7e5e5",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",

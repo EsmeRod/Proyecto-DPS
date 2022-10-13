@@ -7,21 +7,9 @@ import {useNavigation} from "@react-navigation/native";
 const DATA = [
   {
     id: "1",
-    title: "Mis Mascotas",
-    icon:"dog",
-    name:"Mascotas",
-  },
-  {
-    id: "2",
-    title: "Programar Citas",
-    icon:"calendar-alt",
-    name:"Citas",
-  },
-  {
-    id: "3",
-    title: "Productos",
-    icon:"cart-plus",
-    name:"Carrito",
+    title: "Crear Citas",
+    icon:"plus",
+    name:"Crear Citas",
   },
 ];
 
@@ -41,14 +29,14 @@ const Item = ({ item, onPress, backgroundColor, textColor }) => (
     
 );
 
-const MenuPrincipal = () => {
+const BotonCitas = () => {
 
   const navigation = useNavigation();
   
   const [selectedId, setSelectedId] = useState(null);
 
   const renderItem = ({ item }) => {
-    const backgroundColor = item.id === selectedId ? "#459DB9" : "#3DC7DF";
+    const backgroundColor = item.id === selectedId ? "pink" : "pink";
     const color = item.id === selectedId ? 'white' : 'black';
 
 
@@ -105,4 +93,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default MenuPrincipal;
+export default BotonCitas;

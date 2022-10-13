@@ -1,9 +1,8 @@
 import React from "react";
 import { Text, View, StyleSheet,TouchableOpacity,SafeAreaView } from 'react-native';
 import { createBottomTabNavigator} from "@react-navigation/bottom-tabs";
-import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
-
+import {NavigationContainer} from "@react-navigation/native";
+import{createNativeStackNavigator} from "@react-navigation/native-stack";
 import Home from 'react-native-vector-icons/FontAwesome5';
 import Carrito from 'react-native-vector-icons/MaterialIcons';
 import Calendario from 'react-native-vector-icons/FontAwesome5';
@@ -11,45 +10,75 @@ import Comprar from 'react-native-vector-icons/FontAwesome5';
 import Huella from 'react-native-vector-icons/MaterialIcons';
 //Screens
 
- import HomeScreen from "./Components/HomeScreen";
+ import Producto from "./Components/Producto";
   import MenuPrincipal from "./Components/MenuPrincipal";
- import SettingScreen from "./Components/SettingScreen";
+ import Citas from "./Components/Citas";
+ import Subcita from "./Components/Subcita"
  import StackScreen from "./Components/StackScreen";
  import UnoDentro from "./Components/UnoDentro"
-import Perfil from "./Components/Perfil"
+ import Perfil from "./Components/Perfil"
+ //Agrega el componete Perfil en el Stack
 
  const HomeStackNavigator = createNativeStackNavigator();
 
+
+const StackCitas = createNativeStackNavigator();
+
+const MyStackCitas = () => {
+  return (
+    
+      <StackCitas.Navigator initialRouteName="Citas"> 
+        <StackCitas.Screen
+          name="Citas"
+          component={Citas}
+          options={{headerBackTitleVisible: false,
+          headerTitleAlign:'center',
+          headerStyle:{backgroundColor:"#29EAAA"}}}
+        />
+        <StackCitas.Screen name="Crear Citas" component={Subcita}
+        options={{headerBackTitleVisible: false,
+        headerTitleAlign:'center',
+        headerStyle:{backgroundColor:"#FFD959"}}} />
+      </StackCitas.Navigator>
+    
+  );
+};
+
  function MyStack() {
    return(
-  
-     <HomeStackNavigator.Navigator initialRouteName="Menu" >
-     <HomeStackNavigator.Screen name="Menu" component={MenuPrincipal}
+     <HomeStackNavigator.Navigator
+     initialRouteName="Menu">
+     <HomeStackNavigator.Screen name="Menu"
+     component={MenuPrincipal}
      options={{headerBackTitleVisible: false,
       headerTitleAlign:'center',
       headerStyle:{backgroundColor:"#29E4EA"}}}/>
 
      <HomeStackNavigator.Screen name="Mascotas"
-     component={Perfil}
+     component={UnoDentro}
       options={{headerBackTitleVisible: false,
       headerTitleAlign:'center',
       headerStyle:{backgroundColor:"#29EAAA"}}}/>
 
      <HomeStackNavigator.Screen name="Citas"
-     component={SettingScreen}
+     component={Citas}
      options={{headerBackTitleVisible: false,
       headerTitleAlign:'center',
       headerStyle:{backgroundColor:"#29EAAA"}}}/>
 
+      <HomeStackNavigator.Screen name="Crear Citas" component={Subcita}
+        options={{headerBackTitleVisible: false,
+        headerTitleAlign:'center',
+        headerStyle:{backgroundColor:"#FFD959"}}} />
+
       <HomeStackNavigator.Screen name="Carrito"
-     component={HomeScreen}
+     component={Producto}
      options={{headerBackTitleVisible: false,
       headerTitleAlign:'center',
       headerStyle:{backgroundColor:"#29EAAA"}}}/>
 
 
      </HomeStackNavigator.Navigator>
-
 
    )
  }
@@ -101,7 +130,7 @@ import Perfil from "./Components/Perfil"
          headerShown:false,
        }} />
 
-       <Tab.Screen name="Fecha" component={SettingScreen} 
+       <Tab.Screen name="Fecha" component={MyStackCitas} 
        options={{
          tabBarLabel:'Citas',
          tabBarIcon:({color,size}) => (
@@ -111,7 +140,7 @@ import Perfil from "./Components/Perfil"
        }}/>
        
 
-        <Tab.Screen name="Productos" component={HomeScreen} options={{
+        <Tab.Screen name="Productos" component={Producto} options={{
          tabBarLabel:'Carrito',
          tabBarIcon:({color,size}) => (
        <Carrito name="add-shopping-cart" color={color} size={size}></Carrito>

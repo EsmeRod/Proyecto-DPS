@@ -41,9 +41,9 @@ const Item = ({ item, onPress, backgroundColor, textColor }) => (
     
 );
 
-const MenuPrincipal = ({ navigation }) => {
+const MenuPrincipal = () => {
 
-  //const navigation = useNavigation();
+  const navigation = useNavigation();
   
   const [selectedId, setSelectedId] = useState(null);
 

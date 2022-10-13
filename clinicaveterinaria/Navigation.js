@@ -16,6 +16,8 @@ import Huella from 'react-native-vector-icons/MaterialIcons';
  import Subcita from "./Components/Subcita"
  import StackScreen from "./Components/StackScreen";
  import UnoDentro from "./Components/UnoDentro"
+ import Perfil from "./Components/Perfil"
+ //Agrega el componete Perfil en el Stack
 
  const HomeStackNavigator = createNativeStackNavigator();
 

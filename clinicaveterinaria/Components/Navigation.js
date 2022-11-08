@@ -8,7 +8,9 @@ import Carrito from 'react-native-vector-icons/MaterialIcons';
 import Calendario from 'react-native-vector-icons/FontAwesome5';
 import Comprar from 'react-native-vector-icons/FontAwesome5';
 import Huella from 'react-native-vector-icons/MaterialIcons';
+import Login from './Perfil/Login';
 //Screens
+
  import CarritoPrincipal from "../Components/Carrito/CarritoPrincipal";
   import InicioMenuPrincipal from "../Components/Inicio/MenuPrincipal";
  import CitasPrincipal from "../Components/Citas/CitasPrincipal";
@@ -17,9 +19,7 @@ import Huella from 'react-native-vector-icons/MaterialIcons';
  import MascotaPrincipal from "../Components/Mascotas/MascotaPrincipal";
  import Perfil from "../Components/Mascotas/MascotaPerfil";
  import MascotaInfo from "../Components/Mascotas/MascotaInformacion";
-
  //Agrega el componete Perfil en el Stack
-
 
  const MascotaStack = createNativeStackNavigator();
  const FunctionMascotaStack = () => {
@@ -172,6 +172,7 @@ const FunctionCitasStack = () => {
        <Home name="home" color={color} size={size}></Home>
          ),
          headerShown:false,
+         
        }} />
 
        <Tab.Screen name="CitasPrincipal" component={FunctionCitasStack} 
@@ -198,10 +199,8 @@ const FunctionCitasStack = () => {
  export default function Navigation(){
     return(
 
-      
-       <NavigationContainer>
        <MyTabs />
-       </NavigationContainer>
+       
       
      
     );

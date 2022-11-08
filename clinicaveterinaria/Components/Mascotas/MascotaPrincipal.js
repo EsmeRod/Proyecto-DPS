@@ -81,8 +81,7 @@ const MascotaPrincipal = () => {
                  
         <Item
         item={item}
-        onPress={()=>navigation.navigate(item.name) }
-        
+        onPress={()=>navigation.navigate(item.name) }        
       />
       
     );

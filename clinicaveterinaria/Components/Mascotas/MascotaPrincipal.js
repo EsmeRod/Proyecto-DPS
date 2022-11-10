@@ -25,7 +25,6 @@ const MascotaPrincipal = () => {
      const buttonClickedHandler = () => {
 
     };
-
     const seperator = () => {
         return (
             <View style={styles.seperator} />
@@ -80,7 +79,6 @@ const MascotaPrincipal = () => {
     );
 }
 const styles = StyleSheet.create({
-
     image: {
         width:90,
         height:90,
